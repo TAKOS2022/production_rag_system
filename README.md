@@ -18,3 +18,5 @@ The goal is to explore all the steps to build a production rag system
 - Optional : Run this command in the terminal for testing purpose (docker compose exec db_pgvector psql -U takos -d ragdb -h db_pgvector)
 
 ## 2 -  Start building basic rag pipeline
+- uv run python -m production_rag_system.ingest --path data/docs/restaurant.pdf --reset : this command allow me to process the pdf data and store inside pgvector.
+- Run this to ask a question : uv run python -m production_rag_system.query --q "Le Burger Gourmet contient-il du gluten ?"  
