@@ -13,6 +13,8 @@ The goal is to explore all the steps to build a production rag system
 - Create .env file to store keys
 - Populate information inside the docker-compose.yml
 - Create the folder inside data for the volume. I will not commit those file
+- Put the .env file in the same folder where the docker-compose file is located
 - Run docker compose up -d (-d : the container will run in the background. You will not able to see the logs)
+- Optional : Run this command in the terminal for testing purpose (docker compose exec db_pgvector psql -U takos -d ragdb -h db_pgvector)
 
 ## 2 -  Start building basic rag pipeline

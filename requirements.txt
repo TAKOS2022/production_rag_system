@@ -2,7 +2,11 @@ langchain
 langchain-openai 
 openai
 python-dotenv
-pgvector
+pgvector<0.4
 ragas
 psycopg[binary] 
 sqlalchemy
+langchain_community
+langchain-text-splitters
+pypdf
+langchain-postgres
