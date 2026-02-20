@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     # Load .env files
     env_file: 
-     - ../.env
+     - .env
     environment:
       # Set default value if not in .env
       POSTGRES_USER: ${POSTGRES_USER:-takos}
@@ -35,7 +35,7 @@ services:
       db_pgvector:
         condition: service_healthy
     env_file: 
-    - ../.env
+    - .env
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-takos@local.dev}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-change_me}
